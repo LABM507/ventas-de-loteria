@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function generarPDF(ventaData) {
         try {
-            const response = await fetch('http://localhost:3000/generar-factura-pdf', {
+            const response = await fetch('https://loteria-backend-qwmq.onrender.com/generar-factura-pdf', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
