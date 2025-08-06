@@ -7,7 +7,16 @@ const app = express();
 const port = 3000;
 
 const corsOptions = {
-    origin: 'http://127.0.0.1:8080',
+    origin: [
+        'http://127.0.0.1:8080',
+        'http://localhost:8080',
+        'http://localhost:5500',
+        'http://localhost:3000',
+        'file://',
+        'https://loteria-backend-qwmq.onrender.com',
+        'https://loteria-frontend-qwmq.onrender.com'
+    ],
+    credentials: true,
     optionsSuccessStatus: 200
 };
 
