@@ -138,24 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function generarPDF(ventaData, endpoint) {
         try {
-
-            if (!(await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
+            const response = await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(ventaData)
-            })).ok) {
-                throw new Error(`Error en el servidor: ${(await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(ventaData)
-                    })).statusText}`);
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error en el servidor: ${response.statusText}`);
             }
 
-            const blob = await (await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(ventaData)
-            })).blob();
+            const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
@@ -177,6 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         generarPDF(ventasDelDia, '/generar-reporte-cierre');
+
+        ventasDelDia = [];
+        localStorage.removeItem('ventasDelDia');
     });
     
     verHistorialBtn.addEventListener('click', () => {
