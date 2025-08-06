@@ -25,6 +25,7 @@ function drawLine(doc, y) {
 app.post('/generar-factura-pdf', (req, res) => {
     const ventaData = req.body;
     
+    // Configuración con márgenes y tamaño de recibo
     const doc = new PDFDocument({ 
         size: [226.77, 1000],
         margins: 15,
@@ -59,12 +60,6 @@ app.post('/generar-factura-pdf', (req, res) => {
 
     doc.font('Helvetica');
     ventaData.billetes.forEach(billete => {
-        // Lógica de paginación
-        if (yPos + 20 > doc.page.height - doc.page.margins.bottom) {
-            doc.addPage();
-            yPos = doc.y; // Reinicia la posición y con el margen de la nueva página
-        }
-        
         doc.text(String(billete.numero).padStart(2, '0'), leftMargin, yPos);
         doc.text(billete.cantidad.toString(), leftMargin + 75, yPos);
         doc.text(`$${(billete.cantidad * 0.25).toFixed(2)}`, leftMargin + 130, yPos, { align: 'right', width: 60 });
@@ -74,9 +69,8 @@ app.post('/generar-factura-pdf', (req, res) => {
     yPos += 15;
     
     doc.font('Helvetica-Bold').fontSize(8)
-       .text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos);
-    yPos += 12;
-    doc.text(`Total a Pagar: $${ventaData.totalPagar.toFixed(2)}`, leftMargin, yPos);
+       .text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos)
+       .text(`Total a Pagar: $${ventaData.totalPagar.toFixed(2)}`, leftMargin, yPos + 12);
     yPos += 30;
 
     doc.end();
