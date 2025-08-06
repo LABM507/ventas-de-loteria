@@ -58,7 +58,6 @@ app.post('/generar-factura-pdf', (req, res) => {
 
     doc.font('Helvetica');
     ventaData.billetes.forEach(billete => {
-        // Lógica de paginación mejorada
         if (doc.y + 20 > doc.page.height - doc.page.margins.bottom) {
             doc.addPage();
             doc.moveDown(0.5);
