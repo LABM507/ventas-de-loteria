@@ -170,9 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         generarPDF(ventasDelDia, '/generar-reporte-cierre');
-
-        ventasDelDia = [];
-        localStorage.removeItem('ventasDelDia');
     });
     
     verHistorialBtn.addEventListener('click', () => {
