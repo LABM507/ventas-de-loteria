@@ -138,17 +138,24 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function generarPDF(ventaData, endpoint) {
         try {
-            const response = await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
+
+            if (!(await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(ventaData)
-            });
-
-            if (!response.ok) {
-                throw new Error(`Error en el servidor: ${response.statusText}`);
+            })).ok) {
+                throw new Error(`Error en el servidor: ${(await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(ventaData)
+                    })).statusText}`);
             }
 
-            const blob = await response.blob();
+            const blob = await (await fetch(`https://loteria-backend-qwmq.onrender.com${endpoint}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(ventaData)
+            })).blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;

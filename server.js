@@ -25,7 +25,6 @@ function drawLine(doc, y) {
 app.post('/generar-factura-pdf', (req, res) => {
     const ventaData = req.body;
     
-    // Configuración con márgenes y tamaño de recibo
     const doc = new PDFDocument({ 
         size: [226.77, 1000],
         margins: 15,
@@ -191,5 +190,5 @@ app.post('/generar-reporte-cierre', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor de backend escuchando en http://localhost:${port}`);
+    console.log(`Servidor de backend escuchando en http://localhost:8080${port}`);
 });
