@@ -201,3 +201,5 @@ app.post('/generar-reporte-cierre', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor de backend escuchando en http://localhost:${port}`);
 });
+
+// Cambio de prueba para commit
