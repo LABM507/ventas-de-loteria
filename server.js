@@ -25,8 +25,9 @@ function drawLine(doc, y) {
 app.post('/generar-factura-pdf', (req, res) => {
     const ventaData = req.body;
     
+    // Configuración con márgenes y tamaño de recibo
     const doc = new PDFDocument({ 
-        size: [226.77, 1000],
+        size: [226.77, 'letter'], // Se utiliza tamaño letter para manejar paginación
         margins: 15,
     });
 
@@ -34,43 +35,47 @@ app.post('/generar-factura-pdf', (req, res) => {
     res.setHeader('Content-Disposition', `attachment; filename=factura_${ventaData.cliente}.pdf`);
     doc.pipe(res);
 
-    let yPos = 15;
-    const leftMargin = 15;
-    const rightMargin = 20;
+    let yPos = doc.y;
 
-    doc.font('Helvetica-Bold').fontSize(10).text('COMPROBANTE DE VENTA', leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 15;
-    doc.font('Helvetica').fontSize(8).text(`Fecha: ${ventaData.fecha}`, leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 12;
-    doc.text(`Cliente: ${ventaData.cliente}`, leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 20;
+    doc.font('Helvetica-Bold').fontSize(10).text('COMPROBANTE DE VENTA', { align: 'center' });
+    doc.moveDown(0.5);
+    doc.font('Helvetica').fontSize(8).text(`Fecha: ${ventaData.fecha}`, { align: 'center' });
+    doc.moveDown(0.2);
+    doc.text(`Cliente: ${ventaData.cliente}`, { align: 'center' });
+    doc.moveDown(1);
 
-    doc.font('Helvetica-Bold').fontSize(8).text('Detalle de la Compra', leftMargin, yPos);
-    yPos += 15;
+    doc.font('Helvetica-Bold').fontSize(8).text('Detalle de la Compra');
+    doc.moveDown(0.5);
 
-    const headerY = yPos;
+    const headerY = doc.y;
     doc.font('Helvetica-Bold')
-       .text('Número', leftMargin, headerY, { width: 50 })
-       .text('Cantidad', leftMargin + 75, headerY, { width: 50 })
-       .text('Subtotal', leftMargin + 130, headerY, { align: 'right', width: 60 });
-    yPos += 12;
-    doc.moveTo(10, yPos).lineTo(216.77, yPos).stroke();
-    yPos += 5;
+       .text('Número', doc.x, headerY, { width: 50 })
+       .text('Cantidad', doc.x + 75, headerY, { width: 50 })
+       .text('Subtotal', doc.x + 130, headerY, { align: 'right', width: 60 });
+    doc.moveDown(0.2);
+    drawLine(doc, doc.y);
+    doc.moveDown(0.2);
 
     doc.font('Helvetica');
     ventaData.billetes.forEach(billete => {
-        doc.text(String(billete.numero).padStart(2, '0'), leftMargin, yPos);
-        doc.text(billete.cantidad.toString(), leftMargin + 75, yPos);
-        doc.text(`$${(billete.cantidad * 0.25).toFixed(2)}`, leftMargin + 130, yPos, { align: 'right', width: 60 });
-        yPos += 12;
+        // Lógica de paginación mejorada
+        if (doc.y + 20 > doc.page.height - doc.page.margins.bottom) {
+            doc.addPage();
+            doc.moveDown(0.5);
+        }
+        
+        doc.text(String(billete.numero).padStart(2, '0'), doc.x, doc.y, { continued: true, width: 50 });
+        doc.text(billete.cantidad.toString(), doc.x + 75, doc.y, { continued: true, width: 50 });
+        doc.text(`$${(billete.cantidad * 0.25).toFixed(2)}`, doc.x + 130, doc.y, { align: 'right', width: 60 });
+        doc.moveDown(0.2);
     });
 
-    yPos += 15;
+    doc.moveDown(1);
     
     doc.font('Helvetica-Bold').fontSize(8)
-       .text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos)
-       .text(`Total a Pagar: $${ventaData.totalPagar.toFixed(2)}`, leftMargin, yPos + 12);
-    yPos += 30;
+       .text(`Total de Billetes: ${ventaData.totalBilletes}`, doc.x, doc.y)
+       .text(`Total a Pagar: $${ventaData.totalPagar.toFixed(2)}`, doc.x, doc.y + 12);
+    doc.moveDown(2);
 
     doc.end();
 });
