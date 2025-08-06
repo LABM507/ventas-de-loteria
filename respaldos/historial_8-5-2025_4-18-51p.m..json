@@ -1,0 +1,1882 @@
+[
+  {
+    "fecha": "8/5/2025",
+    "cliente": "Cliente de Prueba 1",
+    "billetes": [
+      {
+        "numero": 1,
+        "cantidad": 10
+      },
+      {
+        "numero": 2,
+        "cantidad": 5
+      },
+      {
+        "numero": 3,
+        "cantidad": 4
+      },
+      {
+        "numero": 4,
+        "cantidad": 7
+      },
+      {
+        "numero": 5,
+        "cantidad": 10
+      },
+      {
+        "numero": 6,
+        "cantidad": 5
+      },
+      {
+        "numero": 7,
+        "cantidad": 4
+      },
+      {
+        "numero": 8,
+        "cantidad": 3
+      },
+      {
+        "numero": 9,
+        "cantidad": 7
+      },
+      {
+        "numero": 10,
+        "cantidad": 4
+      },
+      {
+        "numero": 11,
+        "cantidad": 8
+      },
+      {
+        "numero": 12,
+        "cantidad": 10
+      },
+      {
+        "numero": 13,
+        "cantidad": 3
+      },
+      {
+        "numero": 15,
+        "cantidad": 4
+      },
+      {
+        "numero": 16,
+        "cantidad": 2
+      },
+      {
+        "numero": 17,
+        "cantidad": 5
+      },
+      {
+        "numero": 20,
+        "cantidad": 2
+      },
+      {
+        "numero": 21,
+        "cantidad": 5
+      },
+      {
+        "numero": 22,
+        "cantidad": 9
+      },
+      {
+        "numero": 23,
+        "cantidad": 2
+      },
+      {
+        "numero": 24,
+        "cantidad": 7
+      },
+      {
+        "numero": 25,
+        "cantidad": 5
+      },
+      {
+        "numero": 26,
+        "cantidad": 10
+      },
+      {
+        "numero": 27,
+        "cantidad": 3
+      },
+      {
+        "numero": 28,
+        "cantidad": 1
+      },
+      {
+        "numero": 29,
+        "cantidad": 7
+      },
+      {
+        "numero": 30,
+        "cantidad": 7
+      },
+      {
+        "numero": 32,
+        "cantidad": 3
+      },
+      {
+        "numero": 33,
+        "cantidad": 6
+      },
+      {
+        "numero": 34,
+        "cantidad": 4
+      },
+      {
+        "numero": 35,
+        "cantidad": 8
+      },
+      {
+        "numero": 36,
+        "cantidad": 6
+      },
+      {
+        "numero": 37,
+        "cantidad": 4
+      },
+      {
+        "numero": 38,
+        "cantidad": 8
+      },
+      {
+        "numero": 39,
+        "cantidad": 2
+      },
+      {
+        "numero": 40,
+        "cantidad": 5
+      },
+      {
+        "numero": 41,
+        "cantidad": 4
+      },
+      {
+        "numero": 42,
+        "cantidad": 3
+      },
+      {
+        "numero": 43,
+        "cantidad": 1
+      },
+      {
+        "numero": 44,
+        "cantidad": 2
+      },
+      {
+        "numero": 45,
+        "cantidad": 3
+      },
+      {
+        "numero": 46,
+        "cantidad": 9
+      },
+      {
+        "numero": 47,
+        "cantidad": 1
+      },
+      {
+        "numero": 48,
+        "cantidad": 1
+      },
+      {
+        "numero": 49,
+        "cantidad": 9
+      },
+      {
+        "numero": 50,
+        "cantidad": 7
+      },
+      {
+        "numero": 51,
+        "cantidad": 1
+      },
+      {
+        "numero": 52,
+        "cantidad": 9
+      },
+      {
+        "numero": 53,
+        "cantidad": 6
+      },
+      {
+        "numero": 54,
+        "cantidad": 10
+      },
+      {
+        "numero": 55,
+        "cantidad": 2
+      },
+      {
+        "numero": 56,
+        "cantidad": 6
+      },
+      {
+        "numero": 57,
+        "cantidad": 10
+      },
+      {
+        "numero": 58,
+        "cantidad": 6
+      },
+      {
+        "numero": 59,
+        "cantidad": 10
+      },
+      {
+        "numero": 60,
+        "cantidad": 8
+      },
+      {
+        "numero": 61,
+        "cantidad": 7
+      },
+      {
+        "numero": 62,
+        "cantidad": 1
+      },
+      {
+        "numero": 63,
+        "cantidad": 9
+      },
+      {
+        "numero": 64,
+        "cantidad": 6
+      },
+      {
+        "numero": 65,
+        "cantidad": 10
+      },
+      {
+        "numero": 66,
+        "cantidad": 2
+      },
+      {
+        "numero": 67,
+        "cantidad": 2
+      },
+      {
+        "numero": 68,
+        "cantidad": 4
+      },
+      {
+        "numero": 69,
+        "cantidad": 9
+      },
+      {
+        "numero": 70,
+        "cantidad": 4
+      },
+      {
+        "numero": 71,
+        "cantidad": 1
+      },
+      {
+        "numero": 72,
+        "cantidad": 1
+      },
+      {
+        "numero": 73,
+        "cantidad": 3
+      },
+      {
+        "numero": 74,
+        "cantidad": 6
+      },
+      {
+        "numero": 75,
+        "cantidad": 2
+      },
+      {
+        "numero": 76,
+        "cantidad": 7
+      },
+      {
+        "numero": 77,
+        "cantidad": 4
+      },
+      {
+        "numero": 78,
+        "cantidad": 4
+      },
+      {
+        "numero": 79,
+        "cantidad": 10
+      },
+      {
+        "numero": 80,
+        "cantidad": 3
+      },
+      {
+        "numero": 81,
+        "cantidad": 4
+      },
+      {
+        "numero": 82,
+        "cantidad": 1
+      },
+      {
+        "numero": 83,
+        "cantidad": 6
+      },
+      {
+        "numero": 84,
+        "cantidad": 8
+      },
+      {
+        "numero": 85,
+        "cantidad": 3
+      },
+      {
+        "numero": 86,
+        "cantidad": 9
+      },
+      {
+        "numero": 87,
+        "cantidad": 6
+      },
+      {
+        "numero": 88,
+        "cantidad": 2
+      },
+      {
+        "numero": 89,
+        "cantidad": 8
+      },
+      {
+        "numero": 90,
+        "cantidad": 6
+      },
+      {
+        "numero": 91,
+        "cantidad": 8
+      },
+      {
+        "numero": 93,
+        "cantidad": 2
+      },
+      {
+        "numero": 94,
+        "cantidad": 10
+      },
+      {
+        "numero": 95,
+        "cantidad": 6
+      },
+      {
+        "numero": 96,
+        "cantidad": 8
+      },
+      {
+        "numero": 97,
+        "cantidad": 3
+      },
+      {
+        "numero": 98,
+        "cantidad": 2
+      },
+      {
+        "numero": 99,
+        "cantidad": 1
+      }
+    ],
+    "totalBilletes": 491,
+    "totalPagar": 122.75
+  },
+  {
+    "fecha": "8/5/2025",
+    "cliente": "Cliente de Prueba 3",
+    "billetes": [
+      {
+        "numero": 0,
+        "cantidad": 10
+      },
+      {
+        "numero": 1,
+        "cantidad": 2
+      },
+      {
+        "numero": 2,
+        "cantidad": 8
+      },
+      {
+        "numero": 3,
+        "cantidad": 8
+      },
+      {
+        "numero": 4,
+        "cantidad": 7
+      },
+      {
+        "numero": 5,
+        "cantidad": 5
+      },
+      {
+        "numero": 6,
+        "cantidad": 6
+      },
+      {
+        "numero": 7,
+        "cantidad": 9
+      },
+      {
+        "numero": 8,
+        "cantidad": 8
+      },
+      {
+        "numero": 9,
+        "cantidad": 3
+      },
+      {
+        "numero": 10,
+        "cantidad": 4
+      },
+      {
+        "numero": 11,
+        "cantidad": 8
+      },
+      {
+        "numero": 12,
+        "cantidad": 9
+      },
+      {
+        "numero": 13,
+        "cantidad": 8
+      },
+      {
+        "numero": 14,
+        "cantidad": 1
+      },
+      {
+        "numero": 15,
+        "cantidad": 9
+      },
+      {
+        "numero": 16,
+        "cantidad": 6
+      },
+      {
+        "numero": 17,
+        "cantidad": 3
+      },
+      {
+        "numero": 18,
+        "cantidad": 10
+      },
+      {
+        "numero": 19,
+        "cantidad": 1
+      },
+      {
+        "numero": 20,
+        "cantidad": 9
+      },
+      {
+        "numero": 21,
+        "cantidad": 6
+      },
+      {
+        "numero": 22,
+        "cantidad": 1
+      },
+      {
+        "numero": 23,
+        "cantidad": 7
+      },
+      {
+        "numero": 24,
+        "cantidad": 10
+      },
+      {
+        "numero": 25,
+        "cantidad": 5
+      },
+      {
+        "numero": 26,
+        "cantidad": 2
+      },
+      {
+        "numero": 27,
+        "cantidad": 1
+      },
+      {
+        "numero": 28,
+        "cantidad": 4
+      },
+      {
+        "numero": 29,
+        "cantidad": 7
+      },
+      {
+        "numero": 30,
+        "cantidad": 7
+      },
+      {
+        "numero": 31,
+        "cantidad": 2
+      },
+      {
+        "numero": 32,
+        "cantidad": 5
+      },
+      {
+        "numero": 33,
+        "cantidad": 2
+      },
+      {
+        "numero": 34,
+        "cantidad": 3
+      },
+      {
+        "numero": 35,
+        "cantidad": 10
+      },
+      {
+        "numero": 37,
+        "cantidad": 10
+      },
+      {
+        "numero": 39,
+        "cantidad": 10
+      },
+      {
+        "numero": 40,
+        "cantidad": 2
+      },
+      {
+        "numero": 41,
+        "cantidad": 5
+      },
+      {
+        "numero": 42,
+        "cantidad": 6
+      },
+      {
+        "numero": 43,
+        "cantidad": 2
+      },
+      {
+        "numero": 45,
+        "cantidad": 2
+      },
+      {
+        "numero": 46,
+        "cantidad": 6
+      },
+      {
+        "numero": 47,
+        "cantidad": 6
+      },
+      {
+        "numero": 48,
+        "cantidad": 2
+      },
+      {
+        "numero": 49,
+        "cantidad": 3
+      },
+      {
+        "numero": 50,
+        "cantidad": 9
+      },
+      {
+        "numero": 51,
+        "cantidad": 9
+      },
+      {
+        "numero": 52,
+        "cantidad": 6
+      },
+      {
+        "numero": 53,
+        "cantidad": 7
+      },
+      {
+        "numero": 54,
+        "cantidad": 4
+      },
+      {
+        "numero": 55,
+        "cantidad": 8
+      },
+      {
+        "numero": 56,
+        "cantidad": 8
+      },
+      {
+        "numero": 57,
+        "cantidad": 7
+      },
+      {
+        "numero": 58,
+        "cantidad": 9
+      },
+      {
+        "numero": 59,
+        "cantidad": 5
+      },
+      {
+        "numero": 61,
+        "cantidad": 10
+      },
+      {
+        "numero": 63,
+        "cantidad": 6
+      },
+      {
+        "numero": 64,
+        "cantidad": 5
+      },
+      {
+        "numero": 66,
+        "cantidad": 10
+      },
+      {
+        "numero": 67,
+        "cantidad": 4
+      },
+      {
+        "numero": 68,
+        "cantidad": 5
+      },
+      {
+        "numero": 69,
+        "cantidad": 8
+      },
+      {
+        "numero": 70,
+        "cantidad": 6
+      },
+      {
+        "numero": 71,
+        "cantidad": 2
+      },
+      {
+        "numero": 72,
+        "cantidad": 8
+      },
+      {
+        "numero": 73,
+        "cantidad": 9
+      },
+      {
+        "numero": 75,
+        "cantidad": 4
+      },
+      {
+        "numero": 76,
+        "cantidad": 1
+      },
+      {
+        "numero": 77,
+        "cantidad": 10
+      },
+      {
+        "numero": 78,
+        "cantidad": 6
+      },
+      {
+        "numero": 79,
+        "cantidad": 8
+      },
+      {
+        "numero": 80,
+        "cantidad": 1
+      },
+      {
+        "numero": 81,
+        "cantidad": 4
+      },
+      {
+        "numero": 82,
+        "cantidad": 1
+      },
+      {
+        "numero": 85,
+        "cantidad": 6
+      },
+      {
+        "numero": 86,
+        "cantidad": 9
+      },
+      {
+        "numero": 87,
+        "cantidad": 9
+      },
+      {
+        "numero": 88,
+        "cantidad": 8
+      },
+      {
+        "numero": 89,
+        "cantidad": 10
+      },
+      {
+        "numero": 90,
+        "cantidad": 7
+      },
+      {
+        "numero": 91,
+        "cantidad": 4
+      },
+      {
+        "numero": 92,
+        "cantidad": 3
+      },
+      {
+        "numero": 93,
+        "cantidad": 2
+      },
+      {
+        "numero": 94,
+        "cantidad": 5
+      },
+      {
+        "numero": 96,
+        "cantidad": 7
+      },
+      {
+        "numero": 97,
+        "cantidad": 7
+      },
+      {
+        "numero": 98,
+        "cantidad": 9
+      },
+      {
+        "numero": 99,
+        "cantidad": 5
+      }
+    ],
+    "totalBilletes": 531,
+    "totalPagar": 132.75
+  },
+  {
+    "fecha": "8/5/2025",
+    "cliente": "Cliente de Prueba 5",
+    "billetes": [
+      {
+        "numero": 0,
+        "cantidad": 5
+      },
+      {
+        "numero": 1,
+        "cantidad": 2
+      },
+      {
+        "numero": 2,
+        "cantidad": 10
+      },
+      {
+        "numero": 3,
+        "cantidad": 5
+      },
+      {
+        "numero": 4,
+        "cantidad": 5
+      },
+      {
+        "numero": 6,
+        "cantidad": 2
+      },
+      {
+        "numero": 7,
+        "cantidad": 9
+      },
+      {
+        "numero": 8,
+        "cantidad": 1
+      },
+      {
+        "numero": 9,
+        "cantidad": 3
+      },
+      {
+        "numero": 10,
+        "cantidad": 2
+      },
+      {
+        "numero": 11,
+        "cantidad": 2
+      },
+      {
+        "numero": 12,
+        "cantidad": 5
+      },
+      {
+        "numero": 14,
+        "cantidad": 5
+      },
+      {
+        "numero": 15,
+        "cantidad": 3
+      },
+      {
+        "numero": 16,
+        "cantidad": 3
+      },
+      {
+        "numero": 17,
+        "cantidad": 9
+      },
+      {
+        "numero": 18,
+        "cantidad": 2
+      },
+      {
+        "numero": 19,
+        "cantidad": 9
+      },
+      {
+        "numero": 20,
+        "cantidad": 9
+      },
+      {
+        "numero": 21,
+        "cantidad": 8
+      },
+      {
+        "numero": 22,
+        "cantidad": 10
+      },
+      {
+        "numero": 23,
+        "cantidad": 5
+      },
+      {
+        "numero": 24,
+        "cantidad": 3
+      },
+      {
+        "numero": 25,
+        "cantidad": 7
+      },
+      {
+        "numero": 26,
+        "cantidad": 8
+      },
+      {
+        "numero": 28,
+        "cantidad": 1
+      },
+      {
+        "numero": 29,
+        "cantidad": 10
+      },
+      {
+        "numero": 30,
+        "cantidad": 6
+      },
+      {
+        "numero": 31,
+        "cantidad": 1
+      },
+      {
+        "numero": 32,
+        "cantidad": 10
+      },
+      {
+        "numero": 33,
+        "cantidad": 8
+      },
+      {
+        "numero": 34,
+        "cantidad": 10
+      },
+      {
+        "numero": 35,
+        "cantidad": 9
+      },
+      {
+        "numero": 36,
+        "cantidad": 5
+      },
+      {
+        "numero": 37,
+        "cantidad": 10
+      },
+      {
+        "numero": 38,
+        "cantidad": 9
+      },
+      {
+        "numero": 39,
+        "cantidad": 2
+      },
+      {
+        "numero": 41,
+        "cantidad": 6
+      },
+      {
+        "numero": 42,
+        "cantidad": 4
+      },
+      {
+        "numero": 43,
+        "cantidad": 1
+      },
+      {
+        "numero": 44,
+        "cantidad": 6
+      },
+      {
+        "numero": 45,
+        "cantidad": 8
+      },
+      {
+        "numero": 46,
+        "cantidad": 5
+      },
+      {
+        "numero": 47,
+        "cantidad": 9
+      },
+      {
+        "numero": 48,
+        "cantidad": 5
+      },
+      {
+        "numero": 49,
+        "cantidad": 7
+      },
+      {
+        "numero": 50,
+        "cantidad": 5
+      },
+      {
+        "numero": 51,
+        "cantidad": 1
+      },
+      {
+        "numero": 52,
+        "cantidad": 10
+      },
+      {
+        "numero": 53,
+        "cantidad": 6
+      },
+      {
+        "numero": 54,
+        "cantidad": 7
+      },
+      {
+        "numero": 55,
+        "cantidad": 6
+      },
+      {
+        "numero": 56,
+        "cantidad": 5
+      },
+      {
+        "numero": 57,
+        "cantidad": 5
+      },
+      {
+        "numero": 58,
+        "cantidad": 5
+      },
+      {
+        "numero": 59,
+        "cantidad": 7
+      },
+      {
+        "numero": 60,
+        "cantidad": 3
+      },
+      {
+        "numero": 61,
+        "cantidad": 9
+      },
+      {
+        "numero": 62,
+        "cantidad": 6
+      },
+      {
+        "numero": 63,
+        "cantidad": 6
+      },
+      {
+        "numero": 64,
+        "cantidad": 6
+      },
+      {
+        "numero": 65,
+        "cantidad": 1
+      },
+      {
+        "numero": 66,
+        "cantidad": 10
+      },
+      {
+        "numero": 67,
+        "cantidad": 6
+      },
+      {
+        "numero": 68,
+        "cantidad": 7
+      },
+      {
+        "numero": 69,
+        "cantidad": 5
+      },
+      {
+        "numero": 70,
+        "cantidad": 8
+      },
+      {
+        "numero": 71,
+        "cantidad": 8
+      },
+      {
+        "numero": 72,
+        "cantidad": 8
+      },
+      {
+        "numero": 73,
+        "cantidad": 6
+      },
+      {
+        "numero": 74,
+        "cantidad": 8
+      },
+      {
+        "numero": 75,
+        "cantidad": 2
+      },
+      {
+        "numero": 76,
+        "cantidad": 10
+      },
+      {
+        "numero": 77,
+        "cantidad": 4
+      },
+      {
+        "numero": 78,
+        "cantidad": 9
+      },
+      {
+        "numero": 79,
+        "cantidad": 6
+      },
+      {
+        "numero": 80,
+        "cantidad": 6
+      },
+      {
+        "numero": 81,
+        "cantidad": 6
+      },
+      {
+        "numero": 82,
+        "cantidad": 7
+      },
+      {
+        "numero": 83,
+        "cantidad": 8
+      },
+      {
+        "numero": 84,
+        "cantidad": 4
+      },
+      {
+        "numero": 85,
+        "cantidad": 5
+      },
+      {
+        "numero": 86,
+        "cantidad": 6
+      },
+      {
+        "numero": 87,
+        "cantidad": 3
+      },
+      {
+        "numero": 88,
+        "cantidad": 2
+      },
+      {
+        "numero": 89,
+        "cantidad": 4
+      },
+      {
+        "numero": 90,
+        "cantidad": 5
+      },
+      {
+        "numero": 91,
+        "cantidad": 6
+      },
+      {
+        "numero": 92,
+        "cantidad": 2
+      },
+      {
+        "numero": 93,
+        "cantidad": 4
+      },
+      {
+        "numero": 94,
+        "cantidad": 10
+      },
+      {
+        "numero": 95,
+        "cantidad": 5
+      },
+      {
+        "numero": 96,
+        "cantidad": 3
+      },
+      {
+        "numero": 97,
+        "cantidad": 8
+      },
+      {
+        "numero": 98,
+        "cantidad": 1
+      }
+    ],
+    "totalBilletes": 544,
+    "totalPagar": 136
+  },
+  {
+    "fecha": "8/5/2025",
+    "cliente": "Cliente de Prueba 7",
+    "billetes": [
+      {
+        "numero": 0,
+        "cantidad": 4
+      },
+      {
+        "numero": 1,
+        "cantidad": 9
+      },
+      {
+        "numero": 2,
+        "cantidad": 8
+      },
+      {
+        "numero": 3,
+        "cantidad": 7
+      },
+      {
+        "numero": 4,
+        "cantidad": 2
+      },
+      {
+        "numero": 6,
+        "cantidad": 7
+      },
+      {
+        "numero": 7,
+        "cantidad": 8
+      },
+      {
+        "numero": 8,
+        "cantidad": 8
+      },
+      {
+        "numero": 9,
+        "cantidad": 10
+      },
+      {
+        "numero": 10,
+        "cantidad": 10
+      },
+      {
+        "numero": 11,
+        "cantidad": 1
+      },
+      {
+        "numero": 12,
+        "cantidad": 10
+      },
+      {
+        "numero": 13,
+        "cantidad": 6
+      },
+      {
+        "numero": 14,
+        "cantidad": 5
+      },
+      {
+        "numero": 15,
+        "cantidad": 8
+      },
+      {
+        "numero": 16,
+        "cantidad": 10
+      },
+      {
+        "numero": 17,
+        "cantidad": 6
+      },
+      {
+        "numero": 18,
+        "cantidad": 3
+      },
+      {
+        "numero": 19,
+        "cantidad": 5
+      },
+      {
+        "numero": 20,
+        "cantidad": 4
+      },
+      {
+        "numero": 21,
+        "cantidad": 8
+      },
+      {
+        "numero": 22,
+        "cantidad": 5
+      },
+      {
+        "numero": 23,
+        "cantidad": 5
+      },
+      {
+        "numero": 24,
+        "cantidad": 6
+      },
+      {
+        "numero": 25,
+        "cantidad": 5
+      },
+      {
+        "numero": 26,
+        "cantidad": 10
+      },
+      {
+        "numero": 27,
+        "cantidad": 2
+      },
+      {
+        "numero": 30,
+        "cantidad": 4
+      },
+      {
+        "numero": 31,
+        "cantidad": 7
+      },
+      {
+        "numero": 32,
+        "cantidad": 3
+      },
+      {
+        "numero": 33,
+        "cantidad": 7
+      },
+      {
+        "numero": 34,
+        "cantidad": 4
+      },
+      {
+        "numero": 35,
+        "cantidad": 5
+      },
+      {
+        "numero": 36,
+        "cantidad": 5
+      },
+      {
+        "numero": 37,
+        "cantidad": 3
+      },
+      {
+        "numero": 38,
+        "cantidad": 6
+      },
+      {
+        "numero": 39,
+        "cantidad": 4
+      },
+      {
+        "numero": 40,
+        "cantidad": 7
+      },
+      {
+        "numero": 41,
+        "cantidad": 4
+      },
+      {
+        "numero": 42,
+        "cantidad": 8
+      },
+      {
+        "numero": 43,
+        "cantidad": 9
+      },
+      {
+        "numero": 44,
+        "cantidad": 3
+      },
+      {
+        "numero": 48,
+        "cantidad": 6
+      },
+      {
+        "numero": 49,
+        "cantidad": 4
+      },
+      {
+        "numero": 50,
+        "cantidad": 10
+      },
+      {
+        "numero": 51,
+        "cantidad": 6
+      },
+      {
+        "numero": 52,
+        "cantidad": 3
+      },
+      {
+        "numero": 54,
+        "cantidad": 1
+      },
+      {
+        "numero": 55,
+        "cantidad": 1
+      },
+      {
+        "numero": 56,
+        "cantidad": 10
+      },
+      {
+        "numero": 57,
+        "cantidad": 1
+      },
+      {
+        "numero": 58,
+        "cantidad": 10
+      },
+      {
+        "numero": 59,
+        "cantidad": 1
+      },
+      {
+        "numero": 61,
+        "cantidad": 7
+      },
+      {
+        "numero": 62,
+        "cantidad": 1
+      },
+      {
+        "numero": 63,
+        "cantidad": 1
+      },
+      {
+        "numero": 66,
+        "cantidad": 8
+      },
+      {
+        "numero": 67,
+        "cantidad": 5
+      },
+      {
+        "numero": 68,
+        "cantidad": 6
+      },
+      {
+        "numero": 69,
+        "cantidad": 4
+      },
+      {
+        "numero": 70,
+        "cantidad": 3
+      },
+      {
+        "numero": 71,
+        "cantidad": 4
+      },
+      {
+        "numero": 73,
+        "cantidad": 8
+      },
+      {
+        "numero": 74,
+        "cantidad": 7
+      },
+      {
+        "numero": 75,
+        "cantidad": 10
+      },
+      {
+        "numero": 76,
+        "cantidad": 3
+      },
+      {
+        "numero": 77,
+        "cantidad": 10
+      },
+      {
+        "numero": 78,
+        "cantidad": 2
+      },
+      {
+        "numero": 79,
+        "cantidad": 8
+      },
+      {
+        "numero": 80,
+        "cantidad": 7
+      },
+      {
+        "numero": 81,
+        "cantidad": 9
+      },
+      {
+        "numero": 82,
+        "cantidad": 7
+      },
+      {
+        "numero": 83,
+        "cantidad": 1
+      },
+      {
+        "numero": 84,
+        "cantidad": 6
+      },
+      {
+        "numero": 85,
+        "cantidad": 7
+      },
+      {
+        "numero": 86,
+        "cantidad": 6
+      },
+      {
+        "numero": 87,
+        "cantidad": 6
+      },
+      {
+        "numero": 88,
+        "cantidad": 6
+      },
+      {
+        "numero": 89,
+        "cantidad": 9
+      },
+      {
+        "numero": 90,
+        "cantidad": 10
+      },
+      {
+        "numero": 93,
+        "cantidad": 4
+      },
+      {
+        "numero": 94,
+        "cantidad": 1
+      },
+      {
+        "numero": 95,
+        "cantidad": 6
+      },
+      {
+        "numero": 96,
+        "cantidad": 6
+      },
+      {
+        "numero": 97,
+        "cantidad": 2
+      },
+      {
+        "numero": 98,
+        "cantidad": 1
+      },
+      {
+        "numero": 99,
+        "cantidad": 2
+      }
+    ],
+    "totalBilletes": 487,
+    "totalPagar": 121.75
+  },
+  {
+    "fecha": "8/5/2025",
+    "cliente": "Cliente de Prueba 9",
+    "billetes": [
+      {
+        "numero": 0,
+        "cantidad": 9
+      },
+      {
+        "numero": 1,
+        "cantidad": 9
+      },
+      {
+        "numero": 2,
+        "cantidad": 10
+      },
+      {
+        "numero": 3,
+        "cantidad": 9
+      },
+      {
+        "numero": 4,
+        "cantidad": 1
+      },
+      {
+        "numero": 5,
+        "cantidad": 4
+      },
+      {
+        "numero": 6,
+        "cantidad": 5
+      },
+      {
+        "numero": 7,
+        "cantidad": 3
+      },
+      {
+        "numero": 8,
+        "cantidad": 8
+      },
+      {
+        "numero": 10,
+        "cantidad": 7
+      },
+      {
+        "numero": 11,
+        "cantidad": 8
+      },
+      {
+        "numero": 12,
+        "cantidad": 10
+      },
+      {
+        "numero": 13,
+        "cantidad": 8
+      },
+      {
+        "numero": 14,
+        "cantidad": 9
+      },
+      {
+        "numero": 15,
+        "cantidad": 10
+      },
+      {
+        "numero": 16,
+        "cantidad": 2
+      },
+      {
+        "numero": 17,
+        "cantidad": 7
+      },
+      {
+        "numero": 18,
+        "cantidad": 1
+      },
+      {
+        "numero": 19,
+        "cantidad": 4
+      },
+      {
+        "numero": 20,
+        "cantidad": 4
+      },
+      {
+        "numero": 21,
+        "cantidad": 3
+      },
+      {
+        "numero": 23,
+        "cantidad": 4
+      },
+      {
+        "numero": 24,
+        "cantidad": 6
+      },
+      {
+        "numero": 25,
+        "cantidad": 3
+      },
+      {
+        "numero": 26,
+        "cantidad": 7
+      },
+      {
+        "numero": 27,
+        "cantidad": 1
+      },
+      {
+        "numero": 28,
+        "cantidad": 6
+      },
+      {
+        "numero": 29,
+        "cantidad": 7
+      },
+      {
+        "numero": 30,
+        "cantidad": 3
+      },
+      {
+        "numero": 31,
+        "cantidad": 2
+      },
+      {
+        "numero": 32,
+        "cantidad": 10
+      },
+      {
+        "numero": 33,
+        "cantidad": 9
+      },
+      {
+        "numero": 34,
+        "cantidad": 4
+      },
+      {
+        "numero": 35,
+        "cantidad": 4
+      },
+      {
+        "numero": 36,
+        "cantidad": 10
+      },
+      {
+        "numero": 37,
+        "cantidad": 5
+      },
+      {
+        "numero": 38,
+        "cantidad": 1
+      },
+      {
+        "numero": 39,
+        "cantidad": 4
+      },
+      {
+        "numero": 40,
+        "cantidad": 3
+      },
+      {
+        "numero": 41,
+        "cantidad": 1
+      },
+      {
+        "numero": 42,
+        "cantidad": 5
+      },
+      {
+        "numero": 43,
+        "cantidad": 10
+      },
+      {
+        "numero": 44,
+        "cantidad": 1
+      },
+      {
+        "numero": 45,
+        "cantidad": 4
+      },
+      {
+        "numero": 46,
+        "cantidad": 9
+      },
+      {
+        "numero": 47,
+        "cantidad": 3
+      },
+      {
+        "numero": 48,
+        "cantidad": 4
+      },
+      {
+        "numero": 49,
+        "cantidad": 7
+      },
+      {
+        "numero": 50,
+        "cantidad": 1
+      },
+      {
+        "numero": 52,
+        "cantidad": 4
+      },
+      {
+        "numero": 53,
+        "cantidad": 9
+      },
+      {
+        "numero": 54,
+        "cantidad": 7
+      },
+      {
+        "numero": 55,
+        "cantidad": 2
+      },
+      {
+        "numero": 56,
+        "cantidad": 8
+      },
+      {
+        "numero": 57,
+        "cantidad": 8
+      },
+      {
+        "numero": 58,
+        "cantidad": 8
+      },
+      {
+        "numero": 59,
+        "cantidad": 1
+      },
+      {
+        "numero": 60,
+        "cantidad": 3
+      },
+      {
+        "numero": 61,
+        "cantidad": 1
+      },
+      {
+        "numero": 62,
+        "cantidad": 7
+      },
+      {
+        "numero": 63,
+        "cantidad": 8
+      },
+      {
+        "numero": 64,
+        "cantidad": 2
+      },
+      {
+        "numero": 65,
+        "cantidad": 7
+      },
+      {
+        "numero": 66,
+        "cantidad": 2
+      },
+      {
+        "numero": 67,
+        "cantidad": 4
+      },
+      {
+        "numero": 68,
+        "cantidad": 7
+      },
+      {
+        "numero": 69,
+        "cantidad": 5
+      },
+      {
+        "numero": 70,
+        "cantidad": 5
+      },
+      {
+        "numero": 71,
+        "cantidad": 5
+      },
+      {
+        "numero": 72,
+        "cantidad": 8
+      },
+      {
+        "numero": 73,
+        "cantidad": 1
+      },
+      {
+        "numero": 75,
+        "cantidad": 4
+      },
+      {
+        "numero": 76,
+        "cantidad": 6
+      },
+      {
+        "numero": 77,
+        "cantidad": 8
+      },
+      {
+        "numero": 78,
+        "cantidad": 6
+      },
+      {
+        "numero": 79,
+        "cantidad": 8
+      },
+      {
+        "numero": 80,
+        "cantidad": 2
+      },
+      {
+        "numero": 81,
+        "cantidad": 4
+      },
+      {
+        "numero": 82,
+        "cantidad": 10
+      },
+      {
+        "numero": 83,
+        "cantidad": 5
+      },
+      {
+        "numero": 84,
+        "cantidad": 9
+      },
+      {
+        "numero": 85,
+        "cantidad": 3
+      },
+      {
+        "numero": 86,
+        "cantidad": 2
+      },
+      {
+        "numero": 87,
+        "cantidad": 8
+      },
+      {
+        "numero": 89,
+        "cantidad": 8
+      },
+      {
+        "numero": 90,
+        "cantidad": 7
+      },
+      {
+        "numero": 91,
+        "cantidad": 7
+      },
+      {
+        "numero": 92,
+        "cantidad": 3
+      },
+      {
+        "numero": 94,
+        "cantidad": 2
+      },
+      {
+        "numero": 95,
+        "cantidad": 8
+      },
+      {
+        "numero": 96,
+        "cantidad": 2
+      },
+      {
+        "numero": 97,
+        "cantidad": 2
+      },
+      {
+        "numero": 98,
+        "cantidad": 3
+      },
+      {
+        "numero": 99,
+        "cantidad": 6
+      }
+    ],
+    "totalBilletes": 500,
+    "totalPagar": 125
+  }
+]

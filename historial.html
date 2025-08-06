@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .historial-container {
+            padding: 20px;
+        }
+        .venta-cliente {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .venta-cliente h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .venta-cliente table {
+            margin-top: 10px;
+        }
+        .reimprimir-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .reimprimir-btn:hover {
+            background-color: #218838;
+        }
+        .cerrar-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .cerrar-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container historial-container">
+        <h1>Historial de Ventas</h1>
+        <div id="historial-ventas">
+            </div>
+        <button class="cerrar-btn" onclick="window.close()">Cerrar</button>
+    </div>
+    <script src="historial.js"></script>
+</body>
+</html>

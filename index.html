@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Lotería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Venta de Lotería</h1>
+        
+        <div class="form-section">
+            <label for="fecha">Fecha:</label>
+            <input type="text" id="fecha" readonly>
+            
+            <label for="nombre-cliente">Nombre del Cliente:</label>
+            <input type="text" id="nombre-cliente" placeholder="Nombre del cliente">
+            
+            <div class="numero-input">
+                <div class="input-group">
+                    <label for="numero">Número (00-99):</label>
+                    <input type="number" id="numero" min="0" max="99" placeholder="Ej: 25">
+                </div>
+                
+                <div class="input-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" min="1" max="100" placeholder="Máx: 100">
+                </div>
+                
+                <button id="agregar-billete">Agregar</button>
+            </div>
+        </div>
+
+        <div class="lista-compra">
+            <h2>Lista de la Compra</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-billetes">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="resumen">
+            <p>Total de Billetes: <span id="total-billetes">0</span></p>
+            <p>Total a Pagar: $<span id="total-pagar">0.00</span></p>
+        </div>
+
+        <div class="botones-finales">
+            <button id="finalizar-venta">Finalizar Venta</button>
+            <button id="cerrar-dia">Cerrar Venta del Día</button>
+        </div>
+
+        <div class="historial">
+            <button id="ver-historial">Ver Historial de Ventas</button>
+            <button class="borrar-historial-btn" id="borrar-historial-btn">Borrar Historial</button>
+            <button class="agregar-prueba-btn" id="agregar-venta-prueba-btn">Agregar Venta de Prueba</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
