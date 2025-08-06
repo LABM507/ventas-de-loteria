@@ -32,56 +32,7 @@ function drawLine(doc, y) {
 
 // --- RUTA 1: Generar la factura de venta y reimpresión ---
 app.get('/generar-factura-pdf', (req, res) => {
-    const ventaData = {
-        cliente: req.query.cliente,
-        fecha: req.query.fecha,
-        totalBilletes: req.query.totalBilletes,
-        totalPagar: req.query.totalPagar,
-        // Los billetes deben venir como JSON string en el query param
-        billetes: JSON.parse(req.query.billetes || '[]')
-    };
-
-    const PDFDocument = require('pdfkit');
-    const doc = new PDFDocument({ size: [226.77, 1000], margins: 15 });
-
-    res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', `attachment; filename=factura_${ventaData.cliente}.pdf`);
-    doc.pipe(res);
-
-    let yPos = 15;
-    const leftMargin = 15;
-    const rightMargin = 20;
-
-    doc.font('Helvetica-Bold').fontSize(10).text('COMPROBANTE DE VENTA', leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 15;
-    doc.font('Helvetica').fontSize(8).text(`Fecha: ${ventaData.fecha}`, leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 12;
-    doc.text(`Cliente: ${ventaData.cliente}`, leftMargin, yPos, { align: 'center', width: 226.77 - leftMargin - rightMargin });
-    yPos += 20;
-
-    doc.font('Helvetica-Bold').fontSize(8).text('Detalle de la Compra', leftMargin, yPos);
-    yPos += 15;
-
-    doc.font('Helvetica-Bold')
-       .text('Número', leftMargin, yPos, { width: 50 })
-       .text('Cantidad', leftMargin + 75, yPos, { width: 50 })
-       .text('Subtotal', leftMargin + 130, yPos, { align: 'right', width: 60 });
-    yPos += 12;
-
-    doc.font('Helvetica');
-    ventaData.billetes.forEach(billete => {
-        doc.text(String(billete.numero).padStart(2, '0'), leftMargin, yPos, { width: 50 });
-        doc.text(billete.cantidad, leftMargin + 75, yPos, { width: 50 });
-        doc.text(`$${(billete.cantidad * 0.25).toFixed(2)}`, leftMargin + 130, yPos, { align: 'right', width: 60 });
-        yPos += 12;
-    });
-
-    yPos += 10;
-    doc.font('Helvetica-Bold').text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos);
-    yPos += 12;
-    doc.text(`Total a Pagar: $${ventaData.totalPagar}`, leftMargin, yPos);
-
-    doc.end();
+    res.send('¡El endpoint GET está funcionando!');
 });
 
 // --- RUTA 2: Generar el reporte de cierre del día ---
