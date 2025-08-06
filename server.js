@@ -31,13 +31,18 @@ function drawLine(doc, y) {
 }
 
 // --- RUTA 1: Generar la factura de venta y reimpresión ---
-app.post('/generar-factura-pdf', (req, res) => {
-    const ventaData = req.body;
-    
-    const doc = new PDFDocument({ 
-        size: [226.77, 1000],
-        margins: 15,
-    });
+app.get('/generar-factura-pdf', (req, res) => {
+    const ventaData = {
+        cliente: req.query.cliente,
+        fecha: req.query.fecha,
+        totalBilletes: req.query.totalBilletes,
+        totalPagar: req.query.totalPagar,
+        // Los billetes deben venir como JSON string en el query param
+        billetes: JSON.parse(req.query.billetes || '[]')
+    };
+
+    const PDFDocument = require('pdfkit');
+    const doc = new PDFDocument({ size: [226.77, 1000], margins: 15 });
 
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `attachment; filename=factura_${ventaData.cliente}.pdf`);
@@ -57,29 +62,24 @@ app.post('/generar-factura-pdf', (req, res) => {
     doc.font('Helvetica-Bold').fontSize(8).text('Detalle de la Compra', leftMargin, yPos);
     yPos += 15;
 
-    const headerY = yPos;
     doc.font('Helvetica-Bold')
-       .text('Número', leftMargin, headerY, { width: 50 })
-       .text('Cantidad', leftMargin + 75, headerY, { width: 50 })
-       .text('Subtotal', leftMargin + 130, headerY, { align: 'right', width: 60 });
+       .text('Número', leftMargin, yPos, { width: 50 })
+       .text('Cantidad', leftMargin + 75, yPos, { width: 50 })
+       .text('Subtotal', leftMargin + 130, yPos, { align: 'right', width: 60 });
     yPos += 12;
-    doc.moveTo(10, yPos).lineTo(216.77, yPos).stroke();
-    yPos += 5;
 
     doc.font('Helvetica');
     ventaData.billetes.forEach(billete => {
-        doc.text(String(billete.numero).padStart(2, '0'), leftMargin, yPos);
-        doc.text(billete.cantidad.toString(), leftMargin + 75, yPos);
+        doc.text(String(billete.numero).padStart(2, '0'), leftMargin, yPos, { width: 50 });
+        doc.text(billete.cantidad, leftMargin + 75, yPos, { width: 50 });
         doc.text(`$${(billete.cantidad * 0.25).toFixed(2)}`, leftMargin + 130, yPos, { align: 'right', width: 60 });
         yPos += 12;
     });
 
-    yPos += 15;
-    
-    doc.font('Helvetica-Bold').fontSize(8)
-       .text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos)
-       .text(`Total a Pagar: $${ventaData.totalPagar.toFixed(2)}`, leftMargin, yPos + 12);
-    yPos += 30;
+    yPos += 10;
+    doc.font('Helvetica-Bold').text(`Total de Billetes: ${ventaData.totalBilletes}`, leftMargin, yPos);
+    yPos += 12;
+    doc.text(`Total a Pagar: $${ventaData.totalPagar}`, leftMargin, yPos);
 
     doc.end();
 });
@@ -203,3 +203,37 @@ app.listen(port, () => {
 });
 
 // Cambio de prueba para commit
+
+async function generarPDF(ventaData) {
+    try {
+        // Serializa los datos como query params
+        const params = new URLSearchParams({
+            cliente: ventaData.cliente,
+            fecha: ventaData.fecha,
+            totalBilletes: ventaData.totalBilletes,
+            totalPagar: ventaData.totalPagar,
+            billetes: JSON.stringify(ventaData.billetes)
+        });
+
+        const response = await fetch(`https://loteria-backend-qwmq.onrender.com/generar-factura-pdf?${params.toString()}`, {
+            method: 'GET'
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error en el servidor: ${response.statusText}`);
+        }
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `factura_${ventaData.cliente}_reimpresion.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('Error al generar el PDF:', error);
+        alert('Ocurrió un error al generar el PDF. Por favor, revisa la consola para más detalles.');
+    }
+}
